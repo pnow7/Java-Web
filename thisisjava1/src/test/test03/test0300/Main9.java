@@ -1,0 +1,38 @@
+package test.test03.test0300;
+
+import java.util.Scanner;
+public class Main9 { //설탕
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+
+		// N을 나눴을때 둘다 나머지가 0 이여야한다
+		// 출력은 둘로 나눴을때 둘의 몫을 더한다
+		// 둘다 나머지가 0이 아닐때 -1 출력한다
+		int mom = 0;
+		int son = 0;
+		int result = 0;
+		//먼저 5로 나누고
+		//나머지가 3이거나 3의배수이면
+		//5로 나눈 몫과 3으로 나눈 몫을 더하여 출력
+		//5로 나눴는데 나머지가 3보다 작으면
+		//3으로 나눈다
+		
+		//전부다 불가능할때 -1 출력
+		mom = N / 5;
+		son = (N-(mom*5));
+		if(mom >= 1) { //5이상인 수 ->  5미만인수 중에 3으로 나눠지면 3으로 나눈 몫을 반환////
+			if(son%3 == 0) { //18 5로 최대한 나누고 3으로 나누기 
+				result = mom + son/3;
+				System.out.println(result);
+			}
+			else if() //9 
+			
+
+		
+		
+		}
+	}
+
+}

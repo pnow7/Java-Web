@@ -43,18 +43,19 @@ public class Test0410 {
 			list.add(i);
 		}
 		
+		boolean isCharged = true;
+		
 		while(true) {
 			//잔여시도횟수
 			System.out.println("1.충전 | 2.게임시작 | 3.마감");
 			int inputNum = Integer.parseInt(br.readLine());
-			int count = 0;
+
 			//충전
 			if(inputNum == 1) {
 				//충전횟수 저장
-				count++;
 				//충전된 횟수가 있으면 추가 충전 불가
-				if(count == 0) {
-					break;
+				if(!isCharged) {
+					System.out.println("충전된 횟수가 있으므로 추가 충전 불가");
 				}
 				else {
 					System.out.println("충전할 금액을 입력하세요");
@@ -71,6 +72,7 @@ public class Test0410 {
 					else {
 						System.out.println("1000원 단위로 입력하세요");
 					}
+					isCharged = false;
 				}
 			}
 			//게임시작
@@ -104,6 +106,7 @@ public class Test0410 {
 					
 					System.out.println("성공 횟수 : " + success + " 실패 횟수 : " + fail + " 총합점수 : " +totalPoint + " 충전횟수 : " + (remainTry+1));
 				}
+				isCharged = true;
 				
 			}
 			
@@ -123,10 +126,12 @@ public class Test0410 {
 					}
 					
 				}
+				isCharged = true;
 			}
 			
 			if(inputNum == 0 || inputNum >= 4) {
 				System.out.println("1번, 2번, 3번 중 하나를 골라주세요");
+				isCharged = true;
 			}
 		}
 		

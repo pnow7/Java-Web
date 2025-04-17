@@ -2,7 +2,6 @@ package study;
 /*
 듣보잡
 
-
 [입력]
 3 4
 ohhenrie

@@ -17,7 +17,7 @@ N개의 서로 다른 양의 정수가 저장된 배열 A가 있다. 병합 정�
 import java.io.*;
 import java.util.*;
 
-public class Main24060 {
+public class FMain24060 {
 	int A[];
 	static int[] tmp;
 	static int result = -1;
@@ -44,7 +44,7 @@ public class Main24060 {
 		
 	}
 	
-	//p(처음), q, r(끝) 
+	//p(처음), q(중간), r(끝) 
 	public static void merge_sort(int[] A, int p, int r) {
 		if(count > K) return;
 		if(p < r) {

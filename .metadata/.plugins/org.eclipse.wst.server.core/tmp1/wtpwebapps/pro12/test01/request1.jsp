@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	import="jakarta.servlet.RequestDispatcher"
+	import="javax.servlet.RequestDispatcher"
     pageEncoding="UTF-8"%>
     
 <%
@@ -10,8 +10,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Request 테스트</title>
+	<meta charset="UTF-8">
+	<title>Request 테스트</title>
 </head>
 <body>
 

@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>선언문 연습</title>
+	<meta charset="UTF-8">
+	<title>선언문 연습</title>
 </head>
 <body>
 	<h1>안녕하세요 <%=name %>님!!</h1>

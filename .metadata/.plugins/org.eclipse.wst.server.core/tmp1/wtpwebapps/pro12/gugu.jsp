@@ -8,8 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>구구단</title>
+	<meta charset="UTF-8">
+	<title>구구단</title>
 </head>
 <body>
 	<table border='1' width='800'>

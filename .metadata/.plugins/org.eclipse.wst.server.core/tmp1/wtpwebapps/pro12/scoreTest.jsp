@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>점수 출력창</title>
-<meta charset="UTF-8">
+	<title>점수 출력창</title>
+	<meta charset="UTF-8">
 </head>
 <body>
     <h1>시험점수  <%=score %>점</h1><br>

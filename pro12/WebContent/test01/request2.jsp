@@ -8,8 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Request 테스트2</title>
+	<meta charset="UTF-8">
+	<title>Request 테스트2</title>
 </head>
 <body>
 	<h1>이름은 <%= name %>입니다.</h1>

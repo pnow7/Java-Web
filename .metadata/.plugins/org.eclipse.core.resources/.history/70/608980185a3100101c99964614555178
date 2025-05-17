@@ -1,0 +1,79 @@
+package openapi;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+
+public class TbDTO {
+    
+    private response response;
+    private msgHeader header;
+    private msgBody body;
+    
+    @Data
+    @NoArgsConstructor
+    public static class response {
+        private String comMsgHeader;
+        private msgHeader msgHeader;
+        private msgBody msgBody;
+    }
+
+    @Data
+    @NoArgsConstructor
+    public static class msgHeader {
+        private String queryTime;
+        private int resultCode;
+        private String resultMessage;
+    }
+    
+    @Data
+    @NoArgsConstructor
+    public static class msgBody {
+        private List<BusLocation> busLocationList;
+    }
+    
+    @Data
+    @NoArgsConstructor
+    public static class BusLocation {
+    	@JsonProperty("CROWDED")
+    	private int CROWDED;
+    	
+    	@JsonProperty("LOWPLATE")
+        private int LOWPLATE;
+    	
+    	@JsonProperty("PLATENO")
+        private String PLATENO;
+    	
+    	@JsonProperty("REMAINSEATCNT")
+        private int REMAINSEATCNT;
+    	
+    	@JsonProperty("ROUTEID")
+        private Long ROUTEID;
+    	
+    	@JsonProperty("ROUTETYPECD")
+        private int ROUTETYPECD;
+    	
+    	@JsonProperty("STATECD")
+        private int STATECD;
+    	
+    	@JsonProperty("STATIONID")
+        private Long STATIONID;
+    	
+    	@JsonProperty("STATIONSEQ")
+        private int STATIONSEQ;
+    	
+    	@JsonProperty("TAGLESSCD")
+        private int TAGLESSCD;
+    	
+    	@JsonProperty("VEHID")
+        private Long VEHID;
+    	
+        
+    }
+
+}

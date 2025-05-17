@@ -1,0 +1,21 @@
+package practice.sec03;
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		System.out.println("*************************");
+		System.out.println("*\t성적표\t\t*");
+		System.out.println("*************************");
+		System.out.println("* 국어\t50\t\t*");
+		
+		
+		
+
+			
+
+		
+
+
+	}
+
+}

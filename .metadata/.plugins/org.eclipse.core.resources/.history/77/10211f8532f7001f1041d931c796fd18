@@ -1,0 +1,22 @@
+package test1;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main2 {
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int total = Integer.parseInt(br.readLine());
+		int num = Integer.parseInt(br.readLine());
+		
+		int sum = total*num;
+		System.out.println(sum);
+		//int money1 = Integer.parseInt(br.read());
+		
+				
+				
+	}
+	
+
+}

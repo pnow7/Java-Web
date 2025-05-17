@@ -1,0 +1,15 @@
+package practice.sec05;
+
+public class practice7 {
+
+	public static void main(String[] args) {
+		
+		while(true) {
+			System.out.println("----------------------------");
+			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
+			break;
+		}
+
+	}
+
+}

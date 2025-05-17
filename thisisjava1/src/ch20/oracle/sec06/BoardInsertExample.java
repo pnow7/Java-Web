@@ -32,16 +32,20 @@ public class BoardInsertExample {
             //PreparedStatement 얻기 및 값 지정
             //conn.prepareStatement(sql, new String[] {"bno"});
             PreparedStatement pstmt = conn.prepareStatement(sql, new String[] {"bno"});
+<<<<<<< HEAD
             pstmt.setString(1, "크리스마스");
             pstmt.setString(2, "메리크리스마스");
             pstmt.setString(3, "winter");
             pstmt.setString(4, "chrismas.jpg");
             pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/chrismas.jpg"));
                    
+=======
+>>>>>>> 0df72f5 (test)
             pstmt.setString(1, "눈오는 날");
             pstmt.setString(2, "함박눈이 내려요.");
             pstmt.setString(3, "winter");
             pstmt.setString(4, "snow.jpg");
+<<<<<<< HEAD
             pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/snow.jpg"));
             
             pstmt.setString(1, "봄의 정원");
@@ -50,6 +54,11 @@ public class BoardInsertExample {
             pstmt.setString(4, "spring.jpg");
             pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/spring.jpg"));
             
+=======
+            //파일경로
+            pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/snow.jpg"));
+            
+>>>>>>> 0df72f5 (test)
             //SQL문 실행
             int rows = pstmt.executeUpdate();
             System.out.println("저장된 행 수: " + rows);

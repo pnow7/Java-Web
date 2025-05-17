@@ -1,0 +1,20 @@
+package practice.sec03;
+
+public class practice65_69 {
+
+	public static void main(String[] args) {
+		//65
+		int Sum;
+		Sum = 3*6;
+		Sum = 5 + Sum;
+		System.out.println(Sum);
+		
+		//66
+		int a = (5+3)*6;
+		System.out.println(a);
+		
+		//67
+
+	}
+
+}

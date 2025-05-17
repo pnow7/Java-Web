@@ -1,0 +1,64 @@
+package practice.sec07;
+
+//import java.util.Scanner;
+public class PPractice4 {
+
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in); 
+		
+		int[] com = {(int)Math.random()*3, (int)Math.random()*3, (int)Math.random()*3};
+		//0.0.0
+		//0.0.1
+		//0.0.2
+		//0.1.0
+		//0.1.1
+		//0.1.2
+		//0.2.0
+		//0.2.1
+		//0.2.2
+		System.out.println(com);
+		System.out.println("가위 바위 보 입력 : ");	
+//		String man = sc.nextLine();
+		String[] com1 = new String[3];
+		
+		for(int i = 0; i < com.length-2; i++) {
+			if(com[i] == 0) {
+				com1[i] = "가위";
+			}
+			else if(com[i] == 1) {
+				com1[i] = "바위";
+			}
+			else {
+				com1[i] = "보";
+			}
+			for(int j = 1; j < com.length-1; i++) {
+				if(com[j] == 0) {
+					com1[j] = "가위";
+				}
+				else if(com[j] == 1) {
+					com1[j] = "바위";
+				}
+				else {
+					com1[j] = "보";
+				}
+				for(int k = 2; k < com.length; k++) {
+					if(com[k] == 0) {
+						com1[k] = "가위";
+					}
+					else if(com[k] == 1) {
+						com1[k] = "바위";
+					}
+					else {
+						com1[k] = "보";
+					}
+				}
+			}
+		}
+		for(int i = 0; i < 3; i++) {
+			System.out.println(com1[i]);
+		}
+
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="selection" value="if(i == N-1) {"/>
+		<list key="findhistory">
+			<item value="if(i == N-1) {"/>
+			<item value="&#x09;&#x09;String a1 = &quot;국어&quot;;"/>
+			<item value="&#x09;&#x09;int v5 = 10;"/>
+			<item value="&#x09;public static void main(String[] args) {"/>
+		</list>
+	</section>
+</section>

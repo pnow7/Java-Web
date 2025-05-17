@@ -1,0 +1,16 @@
+package practice.sec03;
+
+public class practice71 {
+	public static void main(String[] args) {
+		//잘못된 부분 수정하기
+		boolean b = true;
+		int i = 1;
+		short s = 2;
+		char c = 'a';
+		float f = 1.234f;
+		
+		short s2 = 
+		
+	}
+
+}

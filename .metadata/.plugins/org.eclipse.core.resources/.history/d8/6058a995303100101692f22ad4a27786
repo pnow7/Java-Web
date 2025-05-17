@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="openapi.*, openapi.ApiDataDTO.*, java.util.List" %>
+<%
+
+    
+    String serviceKey = "azuwE8nDzBbDI%2B2BHA9LYLCpF7ePjarJFg7tcbHh4zmHPfB2wSM16DNtPwCQAW%2FvIFn94C%2FUoMNeh1dbu4dnJg%3D%3D&type=json";
+    String srcUrl = "http://api.data.go.kr/openapi/tn_pubr_public_trrsrt_api";
+        
+    try {
+    	
+    	Class<ApiDataDTO2> dto = ApiDataDTO2.class;
+    	ApiDataDTO2 data = (ApiDataDTO2)ApiExplorer2.getApiJsonData(serviceKey, srcUrl, dto);
+    	  
+    } catch(Exception e) {
+        System.out.println(e.getMessage());
+    }
+    
+    
+%>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>공공 데이터</title>
+</head>
+<body>
+둘리둘리둘리
+</body>
+</html>

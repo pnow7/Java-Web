@@ -1,0 +1,41 @@
+package test1;
+
+import java.util.Scanner;
+
+public class Main2_1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int money = sc.nextInt();
+		int num = sc.nextInt();
+		int total = money * num;
+		
+		int money1 = sc.nextInt();
+		int num1 = sc.nextInt();
+		int sum1 = money1 * num1;
+		
+		int money2 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int sum2 = money2 * num2;
+		
+		int money3 = sc.nextInt();
+		int num3 = sc.nextInt();
+		int sum3 = money3 * num3;
+		
+		int money4 = sc.nextInt();
+		int num4 = sc.nextInt();
+		int sum4 = money4 * num4;
+
+		int total1 = sum1 + sum2 + sum3 + sum4;
+		
+		if(total == total1) {
+			System.out.println("Yes");
+		}
+		else {
+			System.out.println("No");
+		}
+		
+
+	}
+
+}

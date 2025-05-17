@@ -1,4 +1,4 @@
-package practice;
+package test;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package practice;
+package test;
 
 /*
 기기아이디, 지점명, 총합포인트, 성공횟수, 실패횟수, 잔여 시도 회수, 매출액

@@ -19,11 +19,9 @@ public class Example250302_4 {
 		
 		int result = (a+b+c)/3;
 		System.out.println("국어 : "+a+" 영어 : "+b+" 수학 : "+c+" 평균 : "+result);
-<<<<<<< HEAD
-		sc.close();
-=======
 
->>>>>>> 0df72f5 (test)
+		sc.close();
+
 	}
 
 }

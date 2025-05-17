@@ -19,10 +19,8 @@ public class Ex2503051600 {
 			b = a + 3;
 		}
 		System.out.println("a,b 출력: "+a+" "+b);
-<<<<<<< HEAD
+
 		sc.close();
-=======
->>>>>>> 0df72f5 (test)
 	}
 
 }

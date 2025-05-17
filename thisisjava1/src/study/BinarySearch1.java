@@ -1,10 +1,5 @@
 package study;
 //10815
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 0df72f5 (test)
 //숫자 카드
 import java.io.*;
 import java.util.*;

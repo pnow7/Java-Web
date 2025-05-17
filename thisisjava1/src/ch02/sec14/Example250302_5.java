@@ -24,11 +24,9 @@ public class Example250302_5 {
 		
 		double result = ((b+c)*d/2)*a;
 		System.out.println("총 비용 : " + result+"원");
-<<<<<<< HEAD
-		sc.close();
-=======
 
->>>>>>> 0df72f5 (test)
+		sc.close();
+
 	}
 
 }

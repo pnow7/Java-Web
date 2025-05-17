@@ -21,10 +21,8 @@ public class Example250302_2 {
 		
 		int result = x*y*z;
 		System.out.println("사각기둥의 부피는 : "+result+"입니다");
-<<<<<<< HEAD
+
 		sc.close();
-=======
->>>>>>> 0df72f5 (test)
 
 	}
 

@@ -7,20 +7,16 @@ public class B {
 		a.field1 = 1;
 		a.field2 = 1;
 		//private 필드 접근이라서 불가
-<<<<<<< HEAD
+
 //		a.field3 = 1;
-=======
-		a.field3 = 1;
->>>>>>> 0df72f5 (test)
-		
+
+
 		a.method1();
 		a.method2();
-		//private 필드 접근이라서 불가
-<<<<<<< HEAD
+//		private 필드 접근이라서 불가
+
 //		a.method3();
-=======
-		a.method3();
->>>>>>> 0df72f5 (test)
+
 	}
 	
 }

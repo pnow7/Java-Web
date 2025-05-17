@@ -21,11 +21,9 @@ public class Example250302_6 {
 		else {
 			System.out.println("두수의 차는 : "+(a-b));
 		}
-<<<<<<< HEAD
-		sc.close();
-=======
 
->>>>>>> 0df72f5 (test)
+		sc.close();
+
 	}
 
 }

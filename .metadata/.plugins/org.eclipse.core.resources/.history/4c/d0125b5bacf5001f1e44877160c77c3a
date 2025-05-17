@@ -1,0 +1,37 @@
+package test;
+import java.util.Scanner;
+public class Main11 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		sc.close();
+		
+		int cnt = 0;
+
+		while(N != 1) {
+			if(N%3==0) { //67 -> 7 (67 66(-1) 22(/3) 11 10 9 3 1
+				N = N/3; 	
+			}
+			
+			else {
+				N--;
+				if(N%2==0 && N%3==0) {
+					N = N/3;
+					cnt++;
+				}
+				else {
+					N--;
+					cnt++;
+				}
+			}
+			cnt++;
+		}
+
+		System.out.print(cnt);
+
+
+		
+		
+	}
+}

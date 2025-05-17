@@ -1,0 +1,18 @@
+package practice;
+import java.util.Scanner;
+public class practice5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("a에 5, b에 10을 입력하세요");
+		System.out.println("a: ");
+		int a = sc.nextInt();
+		System.out.println("b: ");
+		int b = sc.nextInt();
+		sc.close();
+		int sum = a+b;
+		System.out.println("a,b의 합: "+sum);
+
+	}
+
+}

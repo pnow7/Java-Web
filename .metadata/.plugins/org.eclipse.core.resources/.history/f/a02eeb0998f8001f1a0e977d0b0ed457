@@ -1,0 +1,23 @@
+package practice.sec03;
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		System.out.println("*************************");
+		System.out.println("*\t성적표\t\t*");
+//		String a1 = "국어";
+//		String b1 = "국어";
+//		String c1 = "국어";
+//		String d1 = "컴퓨터 학과";
+//		String e1 = "홍길동";
+//		
+//		System.out.println("*************************");
+//		System.out.println("* "+ a1 + "50\t\t\t*");
+//		System.out.println("*************************");
+//		System.out.println("* "+ b1 + "50\t\t\t*");
+	
+		}
+
+	}
+
+}

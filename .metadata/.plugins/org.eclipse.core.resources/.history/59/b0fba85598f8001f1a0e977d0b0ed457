@@ -1,0 +1,18 @@
+package practice.sec03;
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		System.out.println("*****************");
+		System.out.println("*\t\t성적표\t\t");
+		
+		
+
+			
+
+		
+
+
+	}
+
+}

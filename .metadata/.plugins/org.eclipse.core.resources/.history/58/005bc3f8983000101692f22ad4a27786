@@ -1,0 +1,89 @@
+package openapi;
+
+import javax.naming.Context;
+
+import javax.naming.InitialContext;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import openapi.ApiDataDTO.Item;
+
+public class ApiDataDAO {
+	
+	private Connection con;
+	private PreparedStatement pstmt;
+	private DataSource dataFactory;
+	
+	public ApiDataDAO() {
+		try {
+			Context ctx = new InitialContext();
+			Context envContext = (Context)ctx.lookup("java:/comp/env");
+			dataFactory = (DataSource)envContext.lookup("jdbc/oracle");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	/**
+	 * t_cross 테이블에 저장
+	 * @param data
+	 * @return
+	 */
+
+	public int insertData(ApiDataDTO data) {
+		int result = 0;
+		
+		try {
+			con = dataFactory.getConnection();
+			
+			String sql = "insert into t_cross("
+					+ "REGION_CD, "
+					+ "INT_PLAN_NO, "
+					+ "HOLY_PLAN_DD, "
+					+ "INT_NO, "
+					+ "HOLY_PLAN_MM, "
+					+ "INT_NM, "
+					+ "COLLCT_DTIME, "
+					+ "PLAN_SN)"
+					+ "values (?,?,?,?,?,?,?,?)";
+			List<Item> itemList = data.getItemList();
+			int count = 0;
+			for(Item item : itemList) {
+				pstmt = con.prepareStatement(sql);
+				System.out.println(sql);
+				System.out.println(
+						item.getRegionCd()+":" +
+						item.getRegionCd() +":"+
+						item.getIntPlanNo() +":"+
+						item.getHolyPlanDd() +":"+
+						item.getIntNo() +":"+
+						item.getHolyPlanMm() +":"+
+						item.getIntNm() +":"+
+						item.getCollctDtime() +":"+
+						item.getPlanSn()
+				);
+				pstmt.setString(1,  item.getRegionCd());
+				pstmt.setString(2,  item.getIntPlanNo());
+				pstmt.setString(3,  item.getHolyPlanDd());
+				pstmt.setString(4,  item.getIntNo());
+				pstmt.setString(5,  item.getHolyPlanMm());
+				pstmt.setString(6,  item.getIntNm());
+				pstmt.setString(7,  item.getCollctDtime());
+				pstmt.setString(8,  item.getPlanSn());
+				
+				result = pstmt.executeUpdate();
+				
+				if(result < 1) throw new Exception("입력 중 오류 발생");
+				if(count++ > 10) break;
+			}
+			
+			pstmt.close();
+			con.close();
+		} catch(Exception e) {
+			System.out.println("SQL 구문 실행 중 예외 발생:" + e.toString());
+		}
+		return result;
+	}
+}

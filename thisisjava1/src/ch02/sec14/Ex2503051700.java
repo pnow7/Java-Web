@@ -12,6 +12,9 @@ public class Ex2503051700 {
 			input *=-1;
 		}
 		System.out.println(input);
+<<<<<<< HEAD
 		sc.close();
+=======
+>>>>>>> 0df72f5 (test)
 	}
 }

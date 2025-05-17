@@ -1,0 +1,31 @@
+package test0307.homework1;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+public class F1Main1157 {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+
+        String[] croatia = {"c=", "c-", "dz=", "d-", "nj", "s=", "z=", "lj"};
+
+        String input = br.readLine();
+
+        for (String s : croatia) {
+            input = input.replace(s, "?");
+        }
+
+        bw.write(input.length() +"");
+
+        br.close();
+        bw.flush();
+        bw.close();
+
+	}
+
+}

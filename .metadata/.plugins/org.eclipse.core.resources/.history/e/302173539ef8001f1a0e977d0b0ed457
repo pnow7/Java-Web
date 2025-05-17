@@ -1,0 +1,28 @@
+package practice.sec03;
+
+public class practice31_41 {
+
+	public static void main(String[] args) {
+		//31
+		System.out.println(100); //100출력 후 개행
+		//32
+		System.out.println(20+30); //20과 30을 더한후 개행
+		System.out.println("=========================");
+		
+		//33
+		System.out.println("20+30"); //20+30이 ""안에 포함되어 문자열로 인식 -> 20+30을 출력
+		System.out.println("=========================");
+		
+		//34
+		double a = 15.4;
+		System.out.println(a);
+		System.out.println("=========================");
+		
+		//35
+		System.out.println("10"+10+20); //문자열 10을 출력하고 그뒤에 30(10+20)을 출력한다
+		
+		
+
+	}
+
+}

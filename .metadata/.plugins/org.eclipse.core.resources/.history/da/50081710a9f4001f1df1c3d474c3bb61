@@ -1,0 +1,54 @@
+package test;
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        int price = 0;
+       
+        //둘 중 하나 같을때(222라도 성립되니까 잘못된 코드)
+        if(A == B || A == C){
+            price = 1000+(A*100);
+            System.out.println(price);
+        }
+        else if(B == C){
+            price = 1000+(B*100);
+            System.out.println(price);
+        }
+        //다 같은 경우
+        else if(A == B && A == C){
+            price = 10000+(A*1000);
+            System.out.println(price);
+        }
+        //다 다른 경우
+        //C>B>A
+        //C>A>B
+        //C = max
+        //B>C>A
+        //B>A>C
+        //B = max
+        //A>(B,C)
+        //A = max
+        else{
+            if(A < B){
+                A = B;
+                if(A < C){
+                    A = C;
+                    price = A*100;
+                    System.out.println(price);
+                    }
+                price = A*100;
+                System.out.println(price);
+                }
+            else{
+                price = A*100;
+                System.out.println(price);
+            }
+        }
+    }
+       
+ }
+

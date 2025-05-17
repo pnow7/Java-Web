@@ -1,0 +1,21 @@
+package practice.sec03;
+
+public class practice52_54 {
+
+	public static void main(String[] args) {
+		//52
+		int a = 5;
+		a = 6;
+		a = 7;
+		a = 8;
+		System.out.println(a); //int 타입인 변수 a는 처음에는 5로 저장되어있었지만 변수 a를 6 -> 7 -> 8로 값을 변수 a에 저장했다. 그러므로  8을 출력하고 개행한다
+		
+		//53
+		int a1 = 5;
+		double b1 = 5.1;
+		String st = "hello";
+		
+		System.out.println(a+b1+st); //
+	}
+
+}

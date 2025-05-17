@@ -1,0 +1,46 @@
+package ch05.sec06;
+
+public class ArrayExample {
+
+	public static void main(String[] args) {
+		String[] season = {"Spring", "Summer", "Fall", "Winter"};
+		for(int i = 0; i < season.length; i++) {
+			System.out.println("season["+i+"] : "+season[i]);
+		}
+		
+		int[] scores = {83, 90, 87};
+		
+		int sum = 0;
+		for(int j = 0; j < 3; j++) {
+			sum += scores[j];
+		}
+		System.out.println("총합 : "+sum);
+		double avg = (double)sum/3;
+		System.out.println("평균 : "+avg);
+		
+		int[] arr1 = new int[3];
+		
+		for(int k = 0; k < 3; k++) {
+			arr1[k] = k+1;
+			System.out.println("arr1["+k+"] : " + arr1[k]);
+		}
+		System.out.println("\n");
+		
+		double[] arr2 = new double[3];
+		arr2[0] = 0.1;
+		arr2[1] = 0.3;
+		arr2[2] = 0.5;
+		for(int k = 0; k < 3; k++) {
+			System.out.println("arr2["+k+"] : " + arr2[k]);
+		}
+		
+		String[] month = new String[3];
+		month[0] = "1월";
+		month[1] = "2월";
+		month[2] = "3월";
+		for(int k = 0; k < 3; k++) {
+			System.out.println("month["+k+"] : " + month[k]);
+		}
+	}
+
+}

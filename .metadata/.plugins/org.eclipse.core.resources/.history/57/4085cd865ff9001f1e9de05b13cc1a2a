@@ -1,0 +1,12 @@
+package test0305;
+
+
+public class Main11654 {
+
+	public static void main(String[] args) throws IOException{
+		
+		int st1 = System.in.read();
+		System.out.println(st1);
+	}
+
+}

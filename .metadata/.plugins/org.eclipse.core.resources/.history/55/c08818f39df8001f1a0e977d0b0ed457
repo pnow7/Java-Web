@@ -1,0 +1,16 @@
+package practice.sec03;
+
+public class practice31_41 {
+
+	public static void main(String[] args) {
+		//31
+		System.out.println(100); //100출력 후 개행
+		System.out.println(20+30); //20과 30을 더한후 개행
+		
+		System.out.println("=========================");
+		//32
+		System.out.println("20+30"); //20+30이 ""안에 포함되어 문자열로 인식 -> 20+30을 출력
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package practice.sec06;
+
+public class DD {
+
+	public static void main(String[] args) {
+		int[][] score = new int[9][5];
+		System.out.print(score.length);
+	}
+
+}

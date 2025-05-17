@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%
     request.setCharacterEncoding("utf-8");
-    String user_id=request.getparameter("user_id");
+    String user_id=request.getParameter("user_id");
     String user_pw=request.getParameter("user_pw");
 %>    
 <!DOCTYPE html>

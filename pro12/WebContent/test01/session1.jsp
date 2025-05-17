@@ -10,8 +10,8 @@
 <!DOCTYPE html>     
 <html>
 <head>
-<meta charset="UTF-8">
-<title>session 내장 객체 테스트1</title>
+	<meta charset="UTF-8">
+	<title>session 내장 객체 테스트1</title>
 </head>
 <body>
     이름은 <%=name %>입니다.<br>

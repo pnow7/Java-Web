@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>out2 테스트</title>
+	<meta charset="UTF-8">
+	<title>out2 테스트</title>
 </head>
 <body>
 <%

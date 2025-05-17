@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>결과출력창</title>
+	<meta charset="UTF-8">
+	<title>결과출력창</title>
 </head>
 <body>
 	<h1>결과 출력</h1>

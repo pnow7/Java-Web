@@ -13,8 +13,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>합계 구하기</title>
+	<meta charset="UTF-8">
+	<title>합계 구하기</title>
 </head>
 <body>
 	<h2>합계 구하기</h2>

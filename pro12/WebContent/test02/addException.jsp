@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>에러 페이지</title>
+	<meta charset="UTF-8">
+	<title>에러 페이지</title>
 </head>
 <body>
 	==== toString() 내용 ==== <br>

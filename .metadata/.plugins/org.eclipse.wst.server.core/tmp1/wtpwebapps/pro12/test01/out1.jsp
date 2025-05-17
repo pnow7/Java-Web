@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>out1 테스트</title>
+	<meta charset="UTF-8">
+	<title>out1 테스트</title>
 </head>
 <body>
 	<form method="post" action="out2.jsp">

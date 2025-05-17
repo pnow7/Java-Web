@@ -11,8 +11,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>내장 객체 스코프 테스트2</title>
+	<meta charset="UTF-8">
+	<title>내장 객체 스코프 테스트2</title>
 </head>
 <body>
 	<h1>이름은 <%= name %>입니다.</h1>

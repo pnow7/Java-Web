@@ -13,11 +13,9 @@ public class Example250302_7 {
 		int result_pen1 = 1000*pen;
 		int result_box2 = 12*1000*box + result_pen1;
 		System.out.println("총가격 : "+result_box2);
-<<<<<<< HEAD
-		sc.close();
-=======
 
->>>>>>> 0df72f5 (test)
+		sc.close();
+
 	}
 
 }

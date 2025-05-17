@@ -14,10 +14,8 @@ public class Example250302_3 {
 		int m = a/100;
 		int cm = a%100;
 		System.out.println(a+"cm는 " + m + "m " + cm + "cm입니다");
-<<<<<<< HEAD
-		sc.close();
-=======
 
->>>>>>> 0df72f5 (test)
+		sc.close();
+
 	}
 }

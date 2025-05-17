@@ -15,10 +15,7 @@ public class Example250302_1 {
 		int result = x * y;
 		
 		System.out.println(result);
-<<<<<<< HEAD
 		sc.close();
-=======
 
->>>>>>> 0df72f5 (test)
 	}
 }

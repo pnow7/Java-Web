@@ -12,16 +12,16 @@
 	회원가입창에서 전달받은 매개변수 이름이 일치하는 useBean 속성에 자동으로 값을 설정해 줍니다. -->
 	
 	<jsp:setProperty name = "m" property = "id" />
-	<jsp:setProperty name = "m" property = "id" />
-	<jsp:setProperty name = "m" property = "id" />
-	<jsp:setProperty name = "m" property = "id" />
+	<jsp:setProperty name = "m" property = "pwd" />
+	<jsp:setProperty name = "m" property = "name" />
+	<jsp:setProperty name = "m" property = "email" />
 	
 	<%-- member4.jsp 
 	<jsp:useBean id ="m" class = "sec01.ex01.MemberBean" scope = "page" />
 	<jsp:setProperty name = "m" property = "id" param="id" />
-	<jsp:setProperty name = "m" property = "id" param="pwd" />
-	<jsp:setProperty name = "m" property = "id" param="name" />
-	<jsp:setProperty name = "m" property = "id" param="email" /> 
+	<jsp:setProperty name = "m" property = "pwd" param="pwd" />
+	<jsp:setProperty name = "m" property = "name" param="name" />
+	<jsp:setProperty name = "m" property = "email" param="email" />
 	--%> 
 	 
 	<%-- member3.jsp

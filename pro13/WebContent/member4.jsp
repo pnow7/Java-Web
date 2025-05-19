@@ -8,9 +8,9 @@
 
 	<jsp:useBean id = "m" class = "sec01.ex01.MemberBean" scope = "page" />
 	<jsp:setProperty name = "m" property = "id" param="id" />
-	<jsp:setProperty name = "m" property = "id" param="pwd" />
-	<jsp:setProperty name = "m" property = "id" param="name" />
-	<jsp:setProperty name = "m" property = "id" param="email" />
+	<jsp:setProperty name = "m" property = "pwd" param="pwd" />
+	<jsp:setProperty name = "m" property = "name" param="name" />
+	<jsp:setProperty name = "m" property = "email" param="email" />
 	
 <%
 	MemberDAO memberDAO = new MemberDAO();

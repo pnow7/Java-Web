@@ -39,4 +39,5 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="thisisjava.ch06.exam15.Singleton"/>
 </qualifiedTypeNameHistroy>

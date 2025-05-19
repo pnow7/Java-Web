@@ -10,11 +10,11 @@
     request.setCharacterEncoding("UTF-8");
 
     // DB에 회원 추가
-    MemberDAO dao = new MemberDAO();
-    dao.addMember(m);
+    MemberDAO memberDAO = new MemberDAO();
+    memberDAO.addMember(m);
 
     // 모든 회원 목록 가져오기
-    List<MemberBean> membersList = dao.listMembers();
+    List<MemberBean> membersList = memberDAO.listMembers();
 
     // 날짜 포맷 정의
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

@@ -36,6 +36,7 @@
 				<td><%= m.getName() %></td>
 				<td><%= m.getEmail() %></td>
 			</tr>
+			
 			<!-- 두 번째 방식 -->
 			<tr align="center">
 				<td>${m.id }</td>

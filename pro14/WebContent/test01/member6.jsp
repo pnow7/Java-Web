@@ -4,7 +4,7 @@
 <jsp:setProperty name="m" property="*"></jsp:setProperty>
 <jsp:useBean id="addr" class="sec01.ex02.Address"></jsp:useBean>
 <jsp:setProperty name="addr" property="city" value="서울"></jsp:setProperty>
-<jsp:setProperty name="addr" property="zipcode" value="07654"></jsp:setProperty>
+<jsp:setProperty name="addr" property="zipcode" value="3333"></jsp:setProperty>
 
 <%
 	request.setCharacterEncoding("UTF-8");
@@ -18,28 +18,22 @@
 	</head>
 	<body>
 		<table border=1 align="center">
-		
 			<tr align="center" bgcolor="#99ccff">
 				<td width="7%">
 					<b>아이디</b>
 				</td>
-				
 				<td width="7%">
 					<b>비밀번호</b>
 				</td>
-				
 				<td width="5%">
 					<b>이름</b>
 				</td>
-				
 				<td width="5%">
 					<b>이메일</b>
 				</td>
-				
 				<td width="5%">
 					<b>도시</b>
 				</td>
-				
 				<td width="5%">
 					<b>우편번호</b>
 				</td>

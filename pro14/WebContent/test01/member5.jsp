@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" import="java.util.*, sec01.ex01.*" pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" 
+	import="java.util.*, sec01.ex01.*" pageEncoding="UTF-8" isELIgnored="false"%>
 
 <jsp:useBean id="m1" class="sec01.ex01.MemberBean" />
 <jsp:setProperty name="m1" property="*" />
@@ -8,12 +9,12 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 
-	membersMap.put("id", "sleep");
+	membersMap.put("id", "babo");
 	membersMap.put("pwd", "1111");
-	membersMap.put("name", "여긴어디");
+	membersMap.put("name", "뿡");
 	membersMap.put("email", "test@test.com");
 	
-	MemberBean m2 = new MemberBean("whffu", "0000", "졸려", "aaa@test.com");
+	MemberBean m2 = new MemberBean("stupid", "2222", "뿌직", "aaa@test.com");
 	membersList.add(m1);
 	membersList.add(m2);
 	membersMap.put("membersList", membersList);

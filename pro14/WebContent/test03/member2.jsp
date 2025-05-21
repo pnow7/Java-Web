@@ -7,6 +7,7 @@
 
 <%
 	request.setCharacterEncoding("UTF-8");
+
 	membersMap.put("id", "박");
 	membersMap.put("pwd", "1111");
 	membersMap.put("name", "박박박박");

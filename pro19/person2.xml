@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC 
+	"-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd"
+>
+
+<beans>
+
+	<bean id="personService1" class="com.spring.ex02.PersonServiceImpl">
+		<constructor-arg value="바보" />
+	</bean>
+
+	<bean id="personService2" class="com.spring.ex02.PersonServiceImpl">
+		<constructor-arg value="똥깨" />
+		<constructor-arg value="999" />
+	</bean>
+
+</beans>

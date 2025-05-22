@@ -8,12 +8,12 @@
 
 <%-- 
 
-변수 price를 <fmt:formatNumber> 태그를 이용해 숫자를 포매팅하고 
-price 값을 각각의 형식에 맞게 출력
-이때 price의 값을 세 자리마다 콤마(,)로 구분해서 표시
-
-단, groupingUsed를 false로 설정한 경우는 콤마(,)를 표시하지 않으며
-<fmt:formatNubmer> 태그의 var 속성에 설정한 priceNumber로 포매팅한 숫자를 표현 언어에서 출력
+	변수 price를 <fmt:formatNumber> 태그를 이용해 숫자를 포매팅하고 
+	price 값을 각각의 형식에 맞게 출력
+	이때 price의 값을 세 자리마다 콤마(,)로 구분해서 표시
+	
+	단, groupingUsed를 false로 설정한 경우는 콤마(,)를 표시하지 않으며
+	<fmt:formatNubmer> 태그의 var 속성에 설정한 priceNumber로 포매팅한 숫자를 표현 언어에서 출력
 
  --%>
 

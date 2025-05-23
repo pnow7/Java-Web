@@ -23,7 +23,7 @@ li{
 	cursor: pointer;
 }
 
-li.completed {
+li.completed .task{
 	text-decoration: line-through;
 	color: gray;
 }

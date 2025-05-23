@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+   "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+   
+<beans>
+	<!-- 타깃 클래스 빈을 지정 -->
+	<bean id="calcTarget" class="com.spring.ex01.Calculator" />
+	
+	<!-- 로그 기능을 하는 어드바이드 빈을 지정 -->
+	<bean id="logAdvice" class="com.spring.ex01.LoggingAdvice" />
+
+	<!-- 스프링 프레임워크에서 제공하는 ProxyFactoryBean을 이용해 타깃과 어드바이스를 엮어줌 -->
+	<bean id="proxyCal"	class="org.springframework.aop.framework.ProxyFactoryBean">
+		
+		<!-- 타깃 빈을 calcTarget 빈으로 지정 -->
+		<property name="target" ref="calcTarget" />
+		
+		<!-- 
+			스프링의 ProxyFactoryBean의 interceptorNames 속성에 
+			logAdvice를 어드바이스 빈으로 설정하여 
+			타깃 클래스의 메서드 호출 시 logAdvice를 실행 
+		-->
+		<property name="interceptorNames">
+			<list>
+				<value>logAdvice</value>
+			</list>
+		</property>
+		<property name="proxyTargetClass" value="false" />
+	</bean>
+</beans>
+
+
+
+<!-- 
+
+public class Calculator {
+    private int memory;
+
+    public void setMemory(int memory) {
+        this.memory = memory;
+    }
+}
+
+이걸 Spring으로 만든게 <bean>
+
+<bean id="proxyCal" class="com.example.Calculator">
+    <property name="memory" value="100"/>
+</bean>
+
+- `proxyCal` 👉 이 bean의 이름이에요. 나중에 이 객체를 찾을 때 이 이름으로 찾아요.
+- `class="com.example.Calculator"` 👉 이 객체는 `Calculator` 클래스의 인스턴스라는 뜻이에요.
+- `<property name="memory" value="100"/>` 👉 `setMemory(100)`처럼 속성을 넣어주는 거예요.
+
+bean : Spring이 대신 만들어주는 객체
+proxyCal : 이 bean의 이름 (우리가 붙인 이름)
+class="..." : 어떤 클래스를 기반으로 객체를 만들지 알려줌
+property : 클래스 안에 있는 변수에 값을 넣는 설정
+name="..." : 클래스 안 변수 이름 (또는 setter 메서드 이름 일부)
+
+ -->

@@ -4,11 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%
-	Map<String, String> map = new HashMap<>();
-	map.put("1", "리액트 공부하기");
-	map.put("2", "useState 이해하기 (완료)");
-	map.put("3", "투두리스트 만들기 (미완료)");
-	
+	Map<String, String> map = TodoService.getTodos();
 	request.setAttribute("todos", map);
 %>
 
@@ -17,7 +13,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ToDoList</title>
-		<Link rel="stylesheet" href="./css/main.css" type="text/css">
+		<Link rel="stylesheet" href="./css/index.css" type="text/css">
 	</head>
 	<body>
 		<h1>To Do List</h1>

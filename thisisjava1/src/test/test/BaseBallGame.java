@@ -27,8 +27,9 @@ class BatterBatter {
 	}
 	
 	public int getSits() {
-		return hits;
+		return sits;
 	}
+	
 	
 	public double getAverage() {
 		return hits == 0 ? 0.0 : (double) hits / sits;
@@ -52,6 +53,7 @@ class GameGame {
 		System.out.println("타자 9명을 등록해주세요");
 		
 		for(int i = 0; i < batters.length; i++) {
+			System.out.println((i+1) + "번째 타자 이름 : ");
 			String name = sc.nextLine();
 			batters[i] = new BatterBatter(name);
 		}
@@ -66,28 +68,29 @@ class GameGame {
 			
 			while(outs < 3) {
 				BatterBatter batter = batters[batterIndex % 9];
-				System.out.println((batterIndex + 1) + "번 타자 : " + batter.getName());
-				System.out.println("숫자 입력(1 ~ 10) : ");
+				System.out.println("\n" + (batterIndex%9 + 1) + "번 타자 : " + batter.getName());
+				System.out.println("숫자 입력(1 ~ 3) : ");
 				
 				int num = Integer.parseInt(sc.nextLine());
-				int randomPitches = (int)(Math.random() * 6 + 1);
+				int randomPitches = (int)(Math.random() * 3 + 1);
 				
 				if(num == randomPitches) {
-					System.out.println("안타!");
 					batter.recordSits(true);
-				} else {;
+					System.out.println("\n안타!");
+				} else {
 					batter.recordSits(false);
 					outs++;
-					System.out.println("아웃! 총 아웃 : " + outs);
+					System.out.println("\n아웃! 총 아웃 : " + outs);
 				}
 				
 				batterIndex++;
 				
 			}
+			results();
 			
 		}
 		
-		results();
+		
 	}
 	
 	public void results() {

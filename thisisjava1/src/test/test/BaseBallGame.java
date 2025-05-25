@@ -89,8 +89,7 @@ class GameGame {
 			results();
 			
 		}
-		
-		
+			
 	}
 	
 	public void results() {

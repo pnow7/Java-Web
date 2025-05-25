@@ -1,24 +1,25 @@
 # Eclipse 관련
-.settings/
-.project
-.classpath
-.factorypath
+# ! 핵심 설정 파일은 무시하지 말아야 함
+# .settings/       ← 이건 포함해야 다른 컴퓨터에서 설정 그대로 사용 가능
+# .project         ← 반드시 포함
+# .classpath       ← 반드시 포함
+# .factorypath     ← 포함하는 것이 좋음
 
 # 빌드 결과물
 bin/
 target/
 build/
 
-# 서버 관련
+# 서버 관련 (개인 로컬 서버 설정이므로 무시)
 Servers/
 .wtpmodules/
 
 # 로그 파일
 *.log
 
-# 워크스페이스 메타데이터
+# 워크스페이스 메타데이터 (절대 Git에 올리면 안 됨)
 .metadata/
 
-# OS별 파일 (필요시 추가)
+# OS별 파일
 .DS_Store
 Thumbs.db

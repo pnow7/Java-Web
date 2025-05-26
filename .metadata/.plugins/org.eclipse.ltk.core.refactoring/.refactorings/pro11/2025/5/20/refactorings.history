@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;pro11/WebContent/image/다운로드.jfif&apos; to &apos;사진.jfif&apos;" description="Rename resource &apos;다운로드.jfif&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/image/다운로드.jfif" name="사진.jfif" stamp="1747360974014" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;pro11/WebContent/image/사진.jfif&apos; to &apos;a.jfif&apos;" description="Rename resource &apos;사진.jfif&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/image/사진.jfif" name="a.jfif" stamp="1747361172861" updateReferences="true"/>
-</session>

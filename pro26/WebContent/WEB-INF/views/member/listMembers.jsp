@@ -32,7 +32,7 @@
 				<td>${member.email}</td>
 				<td>${member.joinDate}</td>
 				<td><a
-					href="${contextPath}/member/removeMember.do?id=${member.id }">삭제하기</a></td>
+			href="${contextPath}/member/removeMember.do?id=${member.id }">삭제하기</a></td>
 			</tr>
 		</c:forEach>
 	</table>

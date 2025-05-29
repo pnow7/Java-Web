@@ -36,6 +36,7 @@ const getPriorityText = (priority) => {
 
 // 할 일 항목(li) 생성 함수
 function createTodoItem(text, priority, status = "미완료", important = false) {
+	
 	const color = getPriorityColor(priority);
 	const priorityText = getPriorityText(priority);
 
@@ -76,6 +77,7 @@ form.addEventListener("submit", e => {
 
 
 ul.addEventListener("click", e => {
+	
 	const li = e.target.closest("li");
 	if (!li) return;
 
@@ -126,7 +128,9 @@ ul.addEventListener("click", e => {
 
 //필터 버튼에 클릭 이벤트 연결
 document.querySelectorAll(".filters button").forEach(btn => {
+	
 	btn.addEventListener("click", () => {
+		
 		setFilter(btn.dataset.filter);
 	});
 });
@@ -138,6 +142,7 @@ function setFilter(filter) {
 
 	// 버튼에 active 스타일 반영
 	document.querySelectorAll(".filters button").forEach(btn => {
+		
 		btn.classList.toggle("active", btn.dataset.filter === filter);
 	});
 }
@@ -145,6 +150,7 @@ function setFilter(filter) {
 // 필터링 적용 함수
 function applyFilter() {
 	document.querySelectorAll('#todoList li').forEach(li => {
+		
 		const isCompleted = li.classList.contains("completed");
 		const isImportant = li.classList.contains("important");
 

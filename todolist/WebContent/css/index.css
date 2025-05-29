@@ -87,13 +87,18 @@ h2 {
     height: 18px;
 }
 
+.todo {
+	flex: 1;
+}
+
 .todo-item {	
 	display: flex;
 	align-items: center;
-	
+
 	padding: 10px 15px;
 	margin-bottom: 8px;
-	
+	gap: 10px;
+		
 	background-color: rgb(223, 227, 232);
 	border-radius: 4px;
 	cursor: pointer;
@@ -105,23 +110,31 @@ h2 {
 	color: gray;
 }
 
+.action-box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: auto;
+}
+
 .priority-badge {
-    flex-grow: 0 !important;
     padding: 3px 10px;
     border-radius: 12px;
-    color: white;
+    
     font-size: 12px;
-    margin-right: 10px;
+    color: white;
 }
 
 .star-btn {
-    background: #f44336;
+	margin-left: 10px;
+	padding: 0 5px;
     border: none;
-    color: #ddd;
+ 
     font-size: 18px;
+    color: #ddd;
+    background: #f44336;
+    
     cursor: pointer;
-    padding: 0 5px;
-    margin-left: 10px;
 }
 
 .star-btn.active {
@@ -129,14 +142,14 @@ h2 {
 }
 
 .delete-btn {
-    background-color: red;
+	padding: 5px 8px;
+	font-size: 14px;
+	color: white;
+	background-color: red;
+	
     border: none;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 5px 8px;
-    margin-left: 5px;
     border-radius: 3px;
-    color: white;
+    cursor: pointer;
 }
 
 .delete-btn:hover {

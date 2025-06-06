@@ -3,7 +3,17 @@ package study;
 public class DFS1 {
 	//방문처리에 사용 할 배열선언
 	static boolean[] visited = new boolean[9];
-	static int[][] tree = {{}, {2,3,8}, {1,6,8},{1,5},{5,7},{3,4,7},{2},{4,5},{1,2}};
+	static int[][] tree = {
+			{}, 
+			{2,3,8}, 
+			{1,6,8},
+			{1,5},
+			{5,7},
+			{3,4,7},
+			{2},
+			{4,5},
+			{1,2}
+	};
 
 	public static void main(String[] args) {
 		dfs(7); //정수 부터 시작

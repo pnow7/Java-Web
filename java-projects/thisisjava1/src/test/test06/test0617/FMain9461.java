@@ -33,7 +33,7 @@ N이 주어졌을 때, P(N)을 구하는 프로그램을 작성하시오.
 
 import java.io.*;
 
-public class Main9461 {
+public class FMain9461 {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

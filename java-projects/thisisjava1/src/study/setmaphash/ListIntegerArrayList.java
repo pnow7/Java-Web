@@ -1,4 +1,4 @@
-package study;
+package study.setmaphash;
 
 import java.util.*;
 public class ListIntegerArrayList {

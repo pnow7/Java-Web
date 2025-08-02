@@ -1,5 +1,4 @@
 package study.algorithm;
-
 /*
 최소공배수
 
@@ -13,7 +12,6 @@ package study.algorithm;
 45000
 30
 221*/
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;

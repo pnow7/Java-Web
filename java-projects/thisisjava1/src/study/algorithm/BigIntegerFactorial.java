@@ -1,4 +1,4 @@
-package study;
+package study.algorithm;
 /*
 -다리놓기
 

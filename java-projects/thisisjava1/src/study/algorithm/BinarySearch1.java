@@ -1,4 +1,4 @@
-package study;
+package study.algorithm;
 //10815
 //숫자 카드
 import java.io.*;

@@ -32,10 +32,8 @@ public class IsPrime2 {
         //0,1 true
         //2부터 !false -> 2씩 증가하면서 2의 모든 배수 true로...
         //3부터 !false -> 3씩 증가하면서 3의 모든 배수 true로...
-        
         boolean[] num = new boolean[1000001];
         num[0] = num[1] = true;
-        
         //i*i
         for(int i = 2; i * i < num.length; i++) {
         	if(!num[i]) {

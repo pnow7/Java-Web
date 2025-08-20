@@ -31,6 +31,7 @@ public class CantorSet {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		String str;
+		
 		while((str = br.readLine()) != null) {
 			N = Integer.parseInt(str);
 			sb = new StringBuilder();

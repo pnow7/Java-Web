@@ -1,4 +1,4 @@
-package study.algorithm;
+package study.algorithm.search;
 /*
 최소공배수
 

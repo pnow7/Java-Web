@@ -1,11 +1,6 @@
-package study.algorithm;
+package study.algorithm.dfs;
 
 /*
- 
-자연수 N과 M이 주어졌을 때, 아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.
-
-1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열 
-
 [입력]
 3 1
 
@@ -31,41 +26,12 @@ package study.algorithm;
 4 2
 4 3
 
-
-[입력]
-4 4
-
-[출력]
-1 2 3 4
-1 2 4 3
-1 3 2 4
-1 3 4 2
-1 4 2 3
-1 4 3 2
-2 1 3 4
-2 1 4 3
-2 3 1 4
-2 3 4 1
-2 4 1 3
-2 4 3 1
-3 1 2 4
-3 1 4 2
-3 2 1 4
-3 2 4 1
-3 4 1 2
-3 4 2 1
-4 1 2 3
-4 1 3 2
-4 2 1 3
-4 2 3 1
-4 3 1 2
-4 3 2 1
 */
 
 import java.io.*;
 import java.util.*;
 
-public class BackTracking1 {
+public class DFS2 {
 	
 	public static int[] arr;
 	public static boolean[] visit;
@@ -74,6 +40,7 @@ public class BackTracking1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		int N = Integer.parseInt(st.nextToken());

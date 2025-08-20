@@ -1,4 +1,4 @@
-package study.algorithm;
+package study.algorithm.dp;
 
 /*
 
@@ -35,6 +35,7 @@ package study.algorithm;
 
 import java.io.*;
 public class Dp {
+	
 	static int size = 1000000;
 	
 	static int[] dp = new int[size];

@@ -18,6 +18,7 @@ public class Euclidean {
 		bw.flush();
 		bw.close();
 	}
+	
 	public static Long gcd(Long a, Long b) {
 		while(b != 0) {
 			Long r = a%b;
@@ -26,6 +27,7 @@ public class Euclidean {
 		}
 		return a;
 	}
+
 	public static Long lcm(Long a, Long b) {
 		return a*b / gcd(a,b); 
 	}

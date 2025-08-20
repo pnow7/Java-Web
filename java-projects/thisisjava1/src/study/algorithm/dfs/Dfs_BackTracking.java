@@ -1,4 +1,4 @@
-package study.algorithm;
+package study.algorithm.dfs;
 
 public class Dfs_BackTracking {
 

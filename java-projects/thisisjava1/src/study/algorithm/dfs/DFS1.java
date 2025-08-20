@@ -1,4 +1,4 @@
-package study.algorithm;
+package study.algorithm.dfs;
 
 public class DFS1 {
 	//방문처리에 사용 할 배열선언

@@ -1,4 +1,4 @@
-package study.algorithm;
+package study.algorithm.search;
 //10816
 //숫자카드 2
 

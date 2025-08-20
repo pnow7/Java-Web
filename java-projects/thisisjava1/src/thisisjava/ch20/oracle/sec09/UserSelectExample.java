@@ -43,7 +43,7 @@ public class UserSelectExample {
 				//User 가져오기
 				User user = new User();
 				user.setUserId(rs.getString("userid"));
-				user.setUserName(rs.getString("userpassname"));
+				user.setUserName(rs.getString("username"));
 				user.setUserPassword(rs.getString("userpassword"));
 				user.setUserAge(rs.getInt("userage"));
 				user.setUserEmail(rs.getString("useremail"));

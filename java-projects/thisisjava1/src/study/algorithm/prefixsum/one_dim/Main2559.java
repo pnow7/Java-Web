@@ -1,4 +1,4 @@
-package study.algorithm.prefixsum;
+package study.algorithm.prefixsum.one_dim;
 
 /*
 

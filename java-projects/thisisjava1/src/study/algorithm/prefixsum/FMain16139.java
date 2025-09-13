@@ -1,4 +1,4 @@
-package test.test09.test0912;
+package study.algorithm.prefixsum;
 
 /*
 

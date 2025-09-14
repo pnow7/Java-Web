@@ -46,8 +46,8 @@ public class Main11659 {
 			sb.append(sum).append("\n");
 		}
 		
-		br.close();
 		System.out.print(sb);
+		br.close();
 		
 	}
 

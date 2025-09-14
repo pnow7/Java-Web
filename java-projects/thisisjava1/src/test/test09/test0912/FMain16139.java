@@ -52,9 +52,9 @@ public class FMain16139 {
 			int count = prefixSum[alphaIndex][r + 1] - prefixSum[alphaIndex][l];
 			sb.append(count).append("\n");
 		}
-		
-		br.close();
+				
 		System.out.print(sb);
+		br.close();
 		
 	}
 

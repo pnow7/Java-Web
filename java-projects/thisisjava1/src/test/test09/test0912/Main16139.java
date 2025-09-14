@@ -50,8 +50,8 @@ public class Main16139 {
 			sb.append(count).append("\n");
 		}
 		
-		br.close();
 		System.out.print(sb);
+		br.close();
 		
 	}
 

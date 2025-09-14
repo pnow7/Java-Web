@@ -70,8 +70,8 @@ public class Main11660 {
 			sb.append(sum).append("\n");
 		}
 		
-		br.close();
 		System.out.print(sb);
+		br.close();
 
 	}
 

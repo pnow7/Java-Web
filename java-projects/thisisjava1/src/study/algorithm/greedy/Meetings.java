@@ -62,6 +62,8 @@ public class Meetings {
 
 /*
 
+- Greedy
+
 meetings[i][0]: 시작시간
 meetings[i][1]: 종료시간
 

@@ -62,6 +62,9 @@ public class Meetings {
 
 /*
 
+meetings[i][0]: 시작시간
+meetings[i][1]: 종료시간
+
 - 예시 값
 for (int i = 0; i < N; i++) {
 	if (meetings[i][0] >= lastEndTime) {
